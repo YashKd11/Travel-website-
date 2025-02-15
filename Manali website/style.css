@@ -1,0 +1,594 @@
+@font-face {
+    font-family: 'wulkan_display';
+    src: url(/Fonts/Wulkan-Display-Medium.otf);
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url(/Fonts/Gilroy-Light.otf);
+}
+
+@font-face {
+    font-family: 'wulkan-display-italic';
+    src: url(/Fonts/Wulkan-Display-Light-Italic.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'wulkan_display';
+}
+
+.page {
+    height: 99.86vh;
+    width: 98.9vw;
+    position: relative;
+}
+
+.page1 img{
+    height: 110vh;
+    width: 110vw;
+    position: absolute;
+    left: -5%;
+    top: -5%;;
+    object-fit: cover;
+    object-position: left;
+    opacity: 0.6;
+    transition: all ease-out 0.2s;
+}
+
+.landing_page {
+    height: 100%;
+    width: 98.9vw;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0);
+}
+
+.nav {
+    height: 15%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    padding: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all ease-out 0.4s;
+}
+
+.nav1,
+.nav2,
+.nav3 {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav1 img {
+    height: 17vh;
+    width: 15vw;
+    object-fit: contain;
+    object-position: center;
+    transition: all ease-out 0.7s;
+}
+
+.nav2 {
+    justify-content: space-between;
+}
+
+.nav2 a {
+    font-size: 1.7vh;
+    font-weight:bolder;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'gilroy';
+}
+
+.nav3 {
+    justify-content: center;
+}
+
+.nav3 input{
+    padding:1vh 2vw ;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 1vw;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-family: 'wulkan_display';
+    transition: all linear 0.3s;
+}
+
+.nav3 input:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.sticky {
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.sticky a {
+    color: #111111;
+}
+
+.sticky input {
+    background-color: #fff;
+    border: 2px solid black;
+    color: #111111;
+}
+
+.sticky input:hover{
+    background-color: #283a2c;
+    color: #fff;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .content {
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container .content h3 {
+    font-size: 9vh;
+    font-family: 'wulkan_display';
+    font-weight: 200;
+    color: #fff;
+    line-height: 5vw;
+}
+
+.container p,
+.page2 p ,
+.card-item div p,
+.slogan p,
+.review-card p{
+    font-family: 'gilroy';
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.disk-container {
+    height: 50vh;
+    width: 98.76vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 70%;
+}
+
+.disk {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    border: 2px dashed white;
+    border-radius: 50%;
+    animation: loop infinite 20s linear;
+}
+
+.page2 {
+    background-color: #283a2c;
+    height: 130vh;
+    padding: 2vw;
+}
+
+.disk .innerDisk {
+    height: 60%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1.8px dashed white;
+    font-size: 1vw;
+}
+
+.innerDisk2 {
+    height: 50%;
+    width: 50%;
+    border: 1.7px dashed white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes loop {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.box {
+    height: 100%;
+    width: 60%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.backLayer {
+    padding: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frontLayer,
+.backLayer {
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    height: 100%;
+    width: 50%;
+    text-align: left;
+}
+
+.box>div{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    gap: 5vw;
+    padding: 2vw;
+}
+
+.card p{
+    font-family: 'gilroy';
+    font-weight: 600;
+    margin-top: 2vw;
+}
+
+.smalltxt{
+    font-family: 'wulkan_display';
+    font-size: 2vh;
+    padding: 2vw;
+}
+
+.card img {
+    height: 70%;
+    width: 75%;
+    object-fit: cover;
+    object-position: center;
+    margin: 1vw;
+}
+
+.frontLayer {
+    height: 100%;
+    width: 95%;
+    position: absolute;
+    top: 0;
+}
+
+.temp {
+    height: 30vh;
+    width: 15vw;
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 100;
+    position: absolute;
+    bottom: 3%;
+    left: 40%;
+}
+
+.temp:nth-child(2){
+    top: 15%;
+    left: 10%;
+}
+
+.temp:nth-child(3){
+    top: 45%;
+    left: 10%;
+}
+
+.temp-img {
+    height: 35vh;
+    width: 15vw;
+    position: absolute;
+    top:  25%;
+    left: 40%;
+}
+
+.temp-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.slider-wrapper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.page3 {
+    height: 100vh;
+    width: 98.85vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.slider-wrapper {
+    height: 84%;
+    width: 100%;
+    padding: 2% 0%;
+    display: grid;
+    overflow: hidden;
+    grid-auto-flow: column;
+    grid-auto-columns: 31%;;
+    overflow-x: auto;
+    transition: all linear 0.3s;
+    overscroll-behavior-inline: contain;
+}
+
+.card-item,
+.slogan {
+    height: 100%;
+    width: 25vw;
+    border-radius: 3%;
+    position: relative;
+    transition: all ease-in-out 0.4s;
+}
+
+.card-item:nth-child(2){
+    background-image: url(/images/pexels-omerderinyar-23967614.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-item:nth-child(3){
+    background-image: url(/images/pexels-omar-ramadan-1739260-23961840.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-item:nth-child(4){
+    background-image: url(/images/pexels-matthiasgroeneveld-23995203.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-item:nth-child(5){
+    background-image: url(/images/pexels-fei-sun-1272678419-23961875.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-item:nth-child(6){
+    background-image: url(/images/pexels-adamcole-photography-23976512.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.slogan {
+    background-color: #fff;
+    position: relative;
+}
+
+.card-item div,
+.slogan div {
+    height: 50%;
+    width: 100%;
+    background-color: rgba(211, 211, 211, 0.361);
+    position: absolute;
+    padding: 1vw;
+    bottom: 0%;
+    backdrop-filter: blur(3%);
+    border-radius: 3%;
+}
+
+.card-item:hover {
+    rotate: 1deg;
+}
+
+.slogan div h1 {
+    font-size: 5vw;
+    margin: 0 0 2vh 0;
+    color: #111111;
+}
+
+.slogan div p {
+    color: #111111;
+}
+
+.card-item div h1 {
+    font-family: 'gilroy';
+}
+
+.card-item button:hover {
+    background-color: #283a2c;
+    color: #fff;
+    scale: 0.98;
+}
+
+.card-item button {
+    width: 100%;
+    height: 20%;
+    border: none;
+    border-radius: 2%;
+    color: #111111;
+    font-family: 'gilroy';
+    transition: all ease-in-out 0.2s;
+    margin: 3vw 0;
+}
+
+.page3>button{
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 2vh;
+    border: none;
+    cursor: pointer;
+} 
+
+.page4 {
+    height: 80vh;
+    width: 98.95vw;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews {
+    height: 50%;
+    width: 55%;
+    padding: 3vh;
+    display: grid;
+    gap: 2vw;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow-x: auto;
+    box-shadow: 2px 3px 15px rgb(193, 188, 188);
+}
+
+.reviews::-webkit-scrollbar {
+    width: 0;
+}
+
+.review-card {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.review-card h1,
+.review-card p {
+    color: #111111;
+}
+
+.review-card h1 {
+    font-family: 'wulkan-display-italic';
+    font-size: 2.8vw;
+}
+
+.review-card img {
+    height: 30%;
+    width: 40%;
+    object-fit: contain;
+    object-position: center;
+    margin: 1vh 0vh;
+}
+
+.page4 button {
+    background-color: transparent;
+    margin: 2vw;
+    border: none;
+    cursor: pointer;
+}
+
+.page5 {
+    height: 160vh;
+    width: 98.85vw;
+    position: relative;
+    background-color: #f2eeeb;
+    overflow: hidden;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.clouds {
+    height: 50%;
+    width: 100%;
+}
+
+.clouds img {
+    height: 50%;
+    width: 100%;    
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+.form {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: grid;
+    transform: translate(-50%,-50%);
+    padding: 2vw;
+    z-index: 100;
+}
+
+.form h1 {
+    color: #424242;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.form p {
+    color: #121212;
+    font-family: 'gilroy';
+}
+
+.form input{
+    width: 100%;
+    padding: 1vh;
+    margin: 2vh 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #121212;
+}
+
+.form button {
+    font-size: 2vh; 
+    color: #fff;
+    background-color: #283a2c;
+    border-radius: 4%;
+    margin: 3vh 0;
+    font-family: 'gilroy';
+}
+
+.footer{
+    height: 20%;
+    width: 100%;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #283a2c;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-content {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    gap: 1vw;
+}
+
+.tags {
+    height: 100%;
+    width: 25%;
+    border-right: 2px solid #fff;
+}
